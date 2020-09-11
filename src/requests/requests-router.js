@@ -29,6 +29,7 @@ requestsRouter
             .catch(next)
     })
     .get((req,res,next)=>{
+        console.log( req.app.get('db').client) ;
         RequestsService.getAll(
             req.app.get('db')
         )

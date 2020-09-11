@@ -4,7 +4,7 @@ process.env.JWT_SECRET = 'auth-test-secret'
 
 require('dotenv').config()
 
-process.env.TEST_DB_URL = process.env.TEST_DB_URL
+process.env.TEST_DATABASE_URL = process.env.TEST_DATABASE_URL
   || "postgresql://jyip:1234@localhost/recommend_test"
 
 const { expect } = require('chai')
