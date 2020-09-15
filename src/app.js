@@ -19,9 +19,9 @@ app.use(morgan(morganOption))
 app.use(helmet())
 app.use(cors())
 
-app.get('/', (req, res) => {
+/*app.get('/', (req, res) => {
     res.send('Hello, world!')
-})
+})*/
 
 //use the endpoints
 app.use('/api/comments',commentsRouter)

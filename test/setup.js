@@ -1,4 +1,4 @@
-process.env.TZ = 'UCT'
+process.env.TZ = 'UTC'
 process.env.NODE_ENV = 'test'
 process.env.JWT_SECRET = 'auth-test-secret'
 
