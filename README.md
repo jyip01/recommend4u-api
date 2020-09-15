@@ -2,14 +2,14 @@
 
 ## Use
 
-The Recommend4U API was built for use with recommend4u-client ([repo]()/[live app]()).
+The Recommend4U API was built for use with recommend4u-client ([repo](https://github.com/jyip01/recommend4u-client)/[live app](https://recommend4u-client.vercel.app/)).
 
 ## Documentation 
 
 ### Base URL
 
 The base URL for the Recommend4U API is:
-https://[place heroku here].herokuapp.com/api
+https://powerful-island-90502.herokuapp.com/api
 
 ### Authentication
 
@@ -53,11 +53,11 @@ Run the tests `npm test`
 
 ### Live App 
 
-A live version of the app can be accessed [here](). 
+A live version of the app can be accessed [here](https://recommend4u-client.vercel.app/). 
 
 To demo Recommend4U, log in with: 
 * Email: test@gmail.com
-* Password: password
+* Password: Password1
 
 ### Summary 
 
