@@ -4,13 +4,11 @@ const config = require('../config')
 
 const AuthService = {
     getUserWithEmail(db, email) {
-        console.log("Inside AuthService");
         return db('recommend_users AS users')
           .where('users.email',email)
           .first()
     },
     comparePasswords(password, hash) {
-        console.log("inside password service");
         return bcrypt.compare(password, hash)
     },
     createJwt(subject, payload) {
