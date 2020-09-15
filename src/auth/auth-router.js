@@ -7,7 +7,7 @@ const jsonBodyParser = express.json()
 authRouter
   // used to login users to recommend4u client and creates jwt is login info is correct
   .post('/login', jsonBodyParser, (req, res, next) => {
-
+console.log("hello ######");
     const { email, password } = req.body
     const loginUser = { email, password }
 
@@ -29,6 +29,7 @@ authRouter
 
         return AuthService.comparePasswords(loginUser.password, dbUser.password)
           .then(compareMatch => {
+            console.log("inside compare password");
             if (!compareMatch)
               return res.status(400).json({
                 error: 'Incorrect email or password',
@@ -45,7 +46,9 @@ authRouter
             })
           })
       })
-      .catch(next)
+      .catch((err)=>{
+        console.log(err);
+      })
   })
 
 module.exports = authRouter

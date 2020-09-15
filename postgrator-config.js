@@ -9,5 +9,4 @@ module.exports = {
   "connectionString": (process.env.NODE_ENV === 'test')
     ? "postgresql://jyip:1234@localhost/recommend_test"
     : "postgresql://jessica_yip:1234@localhost/recommend",
-  
 }
